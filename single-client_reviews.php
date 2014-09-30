@@ -30,7 +30,7 @@ get_header(); ?>
                 $nb_stars = intval( get_post_meta( get_the_ID(), 'client_rating', true ) );
                 for ( $star_counter = 1; $star_counter <= 5; $star_counter++ ) {
                     if ( $star_counter <= $nb_stars ) {
-                        echo '<img src="' . plugins_url( 'Client-Reviews/images/icon.png' ) . '" />';
+                        echo '<img src="' . plugins_url( 'Client-Reviews/images/gold.png' ) . '" />';
                     } else {
                         echo '<img src="' . plugins_url( 'Client-Reviews/images/grey.png' ). '" />';
                     }
