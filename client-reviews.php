@@ -9,7 +9,6 @@ Author URI: http://www.graphicandweb.com
 License: GPLv2
 */
 ?>
-
 <?php
 add_action( 'init', 'create_client_review' );
 
@@ -111,5 +110,3 @@ function include_template_function( $template_path ) {
     }
     return $template_path;
 }
-
-?>
