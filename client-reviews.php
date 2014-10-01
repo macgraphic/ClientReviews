@@ -10,6 +10,7 @@ License: GPLv2
 */
 ?>
 <?php
+
 add_action( 'init', 'create_client_review' );
 
 
@@ -54,7 +55,7 @@ function my_admin() {
 
 function display_client_review_meta_box( $client_review ) {
     // Retrieve the name of the client
-    $client_name = esc_html( get_post_meta( $client_review->ID, 'client_director', true ) );
+    $client_name = esc_html( get_post_meta( $client_review->ID, 'client_name', true ) );
     $client_rating = intval( get_post_meta( $client_review->ID, 'client_rating', true ) );
     ?>
     <table>
